@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOB Tactical Catalog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">GEL BLASTER <span>GRAFFITI-MID END-HIGH END</span></div>
+
+<ul class="nav-links">
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+
+<input type="text" id="searchBar" class="search" placeholder="Search tactical units...">
+</nav>
+
+<header class="hero">
+<div class="hero-content">
+<h1>ELITE PERFORMANCE.<br>BUILT FOR BATTLE.</h1>
+<p>Premium Gel Blasters for Tactical Play.</p>
+
+<div class="hero-buttons">
+<button onclick="filterUnits('all')">ALL</button>
+<button onclick="filterUnits('high')">HIGH END</button>
+<button onclick="filterUnits('mid')">MID END</button>
+<button onclick="filterUnits('graffiti')">GRAFFITI</button>
+</div>
+</div>
+</header>
+
+<section class="main-layout">
+
+<aside class="sidebar">
+<h2>CATEGORIES</h2>
+
+<button onclick="filterUnits('all')">ALL UNITS</button>
+<button onclick="filterUnits('high')">HIGH END</button>
+<button onclick="filterUnits('mid')">MID END</button>
+<button onclick="filterUnits('graffiti')">GRAFFITI DESIGN</button>
+</aside>
+
+<div class="catalog-grid" id="catalogGrid"></div>
+
+<div class="details-panel" id="detailsPanel">
+<h2>SELECT A UNIT</h2>
+<p>Click any unit to view tactical details.</p>
+</div>
+
+</section>
+
+<div id="zoomModal" class="zoom-modal">
+<span class="closeZoom" onclick="closeZoom()">×</span>
+<img id="zoomedImage">
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
